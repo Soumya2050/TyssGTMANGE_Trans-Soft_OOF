@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<listeners>
+		<listener class-name="com.GTMange.TransSoft.genericutility.ListenerImplementClass"></listener>
+		<listener class-name="com.GTMange.TransSoft.genericutility.ITransform"></listener>
+	</listeners>
+	<test thread-count="2" name="TestRunner 1">
+		<classes>
+			<class name="usersPageTest.UpdateUsersModuleTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="1" name="TestRunner 2">
+		<classes>
+			<class name="userMouduleTest.UpdateUsersModuleTest" />
+			<class name="orderModuleTest.UpdateOrderStatusTest" />
+		</classes>
+	</test>
+	<test thread-count="1" name="TestRunner 4">
+		<classes>
+			<class name="userMouduleTest.AddToMenuTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
