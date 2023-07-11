@@ -2,46 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T09:55:33 IST" name="Default suite" finished-at="2023-07-11T09:55:59 IST" duration-ms="26104">
+  <suite started-at="2023-07-11T15:12:35 IST" name="Default suite" finished-at="2023-07-11T15:12:45 IST" duration-ms="9948">
     <groups>
       <group name="regTest">
-        <method signature="AddToCartTest.addToCart()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" name="addToCart" class="usersPageTest.AddToCartTest"/>
+        <method signature="AddToMenuTest.addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" name="addToMenu" class="userMouduleTest.AddToMenuTest"/>
       </group> <!-- regTest -->
-      <group name="smokeTest">
-        <method signature="AddToCartTest.addToCart()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" name="addToCart" class="usersPageTest.AddToCartTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2023-07-11T09:55:33 IST" name="Default test" finished-at="2023-07-11T09:55:59 IST" duration-ms="26104">
-      <class name="usersPageTest.AddToCartTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:32 IST" name="connectToDataBase" finished-at="2023-07-11T09:55:33 IST" duration-ms="550" status="PASS">
+    <test started-at="2023-07-11T15:12:35 IST" name="Default test" finished-at="2023-07-11T15:12:45 IST" duration-ms="9948">
+      <class name="userMouduleTest.AddToMenuTest">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:35 IST" name="connectToDataBase" finished-at="2023-07-11T15:12:35 IST" duration-ms="433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:33 IST" name="lunchTheBrowser" finished-at="2023-07-11T09:55:42 IST" duration-ms="9720" status="PASS">
+        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:35 IST" name="lunchTheBrowser" finished-at="2023-07-11T15:12:38 IST" duration-ms="2304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:42 IST" name="loginToApplication" finished-at="2023-07-11T09:55:43 IST" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:38 IST" name="loginToApplication" finished-at="2023-07-11T15:12:38 IST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="addToCart()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:43 IST" name="addToCart" finished-at="2023-07-11T09:55:57 IST" duration-ms="14496" status="PASS">
+        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:38 IST" name="addToMenu" finished-at="2023-07-11T15:12:44 IST" duration-ms="6379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:58 IST" name="logoutFromApplication" finished-at="2023-07-11T09:55:58 IST" duration-ms="680" status="PASS">
+        </test-method> <!-- addToMenu -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:44 IST" name="logoutFromApplication" finished-at="2023-07-11T15:12:45 IST" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:58 IST" name="closeTheBrowser" finished-at="2023-07-11T09:55:59 IST" duration-ms="532" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:45 IST" name="closeTheBrowser" finished-at="2023-07-11T15:12:45 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:usersPageTest.AddToCartTest@5884a914]" started-at="2023-07-11T09:55:59 IST" name="closeDataBase" finished-at="2023-07-11T09:55:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@25df00a0]" started-at="2023-07-11T15:12:45 IST" name="closeDataBase" finished-at="2023-07-11T15:12:45 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDataBase -->
-      </class> <!-- usersPageTest.AddToCartTest -->
+      </class> <!-- userMouduleTest.AddToMenuTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
