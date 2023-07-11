@@ -35,6 +35,7 @@ public class AddToMenuTest extends BaseClass {
 		String price = eLib.getDataFromExcel(ePath, "addMenu", 7, 4);
 		String img = eLib.getDataFromExcel(ePath, "addMenu", 7, 5);
 		System.out.println(dishName);
+		System.out.println(img);
 		/**
 		 * This method is used to print the no of dished (1)
 		 */
