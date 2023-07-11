@@ -89,6 +89,7 @@ public class UpdateOrderStatusTest extends BaseClass{
 	@Test
 	public void test1() {
 		System.out.println("Hii Welcome to the Tyss");
+		System.out.println("ama ghara odisha,Balasore,pin=756045");
 	}
 
 }
