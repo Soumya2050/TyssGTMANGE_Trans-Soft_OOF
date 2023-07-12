@@ -1,5 +1,6 @@
 package usersPageTest;
 
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -58,6 +59,7 @@ public class AddToCartTest extends BaseClass2{
 		/* handle another popup */
 		Thread.sleep(3000);
 		wLib.swithToAlertWindowAndAccpect(driver, "ok");
+		Reporter.log("The popup is handeled successfully");
 	}
 
 }

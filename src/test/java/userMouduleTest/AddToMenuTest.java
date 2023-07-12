@@ -114,5 +114,9 @@ public class AddToMenuTest extends BaseClass {
 		System.out.println("The number of dishes are displayed in the dashboard2:- "+dishno2);
 		soft.assertAll();
 	}
+	@Test
+	public void test1() {
+		System.out.println("Why the script is getting failuare ");
+	}
 
 }
