@@ -7,9 +7,9 @@ import org.testng.asserts.SoftAssert;
 import com.GTMange.TransSoft.ObjectRepository.AdminDashboardPage;
 import com.GTMange.TransSoft.ObjectRepository.UsersPage;
 import com.GTMange.TransSoft.genericutility.BaseClass;
-//@Listeners(com.GTMange.TransSoft.genericutility.ListenerImplementClass.class)
+@Listeners(com.GTMange.TransSoft.genericutility.ListenerImplementClass.class)
 public class UpdateUsersModuleTest extends BaseClass {
-	@Test(groups = { "smokeTest" }/*,retryAnalyzer = com.GTMange.TransSoft.genericutility.IretryAnalyserImplementation.class*/)
+	@Test(groups = { "smokeTest" },retryAnalyzer = com.GTMange.TransSoft.genericutility.IretryAnalyserImplementation.class)
 	public void updateUsersModuleTest() throws Throwable {
 
 		String URL1 = fLib.getDataFromPropertiesFile(path, "url1");

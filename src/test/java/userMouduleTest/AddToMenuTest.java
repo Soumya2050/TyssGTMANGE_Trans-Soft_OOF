@@ -21,10 +21,10 @@ import com.GTMange.TransSoft.genericutility.BaseClass;
 import com.GTMange.TransSoft.genericutility.ExcelUtility;
 import com.GTMange.TransSoft.genericutility.FileUtility;
 import com.GTMange.TransSoft.genericutility.WebActionUtility;
-//@Listeners(com.GTMange.TransSoft.genericutility.ListenerImplementClass.class)
+@Listeners(com.GTMange.TransSoft.genericutility.ListenerImplementClass.class)
 public class AddToMenuTest extends BaseClass {
 	
-	@Test(groups = {"regTest"}/*,retryAnalyzer = com.GTMange.TransSoft.genericutility.IretryAnalyserImplementation.class*/)
+	@Test(groups = {"regTest"},retryAnalyzer = com.GTMange.TransSoft.genericutility.IretryAnalyserImplementation.class)
 	public void addToMenu() throws Throwable {
 		String URL1 = fLib.getDataFromPropertiesFile(path, "url1");
 		String USERNAME1=fLib.getDataFromPropertiesFile(path, "username1");

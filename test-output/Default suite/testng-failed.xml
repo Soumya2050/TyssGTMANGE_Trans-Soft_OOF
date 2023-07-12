@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="usersPageTest.AddToCartTest">
+      <class name="userMouduleTest.AddToMenuTest">
         <methods>
-          <include name="lunchTheBrowser"/>
-          <include name="closeDataBase"/>
           <include name="connectToDataBase"/>
+          <include name="test1"/>
           <include name="logoutFromApplication"/>
           <include name="loginToApplication"/>
           <include name="closeTheBrowser"/>
-          <include name="addToCart"/>
+          <include name="lunchTheBrowser"/>
+          <include name="closeDataBase"/>
         </methods>
-      </class> <!-- usersPageTest.AddToCartTest -->
+      </class> <!-- userMouduleTest.AddToMenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
