@@ -1,13 +1,18 @@
 package com.GTMange.TransSoft.genericutility;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,7 +25,7 @@ public class WebActionUtility {
 	FileUtility fLib = new FileUtility();
 	int TIMEOUT;
 
-	public WebActionUtility()  {
+	public WebActionUtility() {
 		String filepath;
 		try {
 			filepath = fLib.getFilePathFromPropertiesFile("PropertiesFilePath");
@@ -32,8 +37,10 @@ public class WebActionUtility {
 			e.printStackTrace();
 		}
 	}
+
 	/**
 	 * This methos is used to maximize the window
+	 * 
 	 * @param driver
 	 */
 	public void maxiMizeTheWindow(WebDriver driver) {
@@ -63,6 +70,23 @@ public class WebActionUtility {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
 		wait.until(ExpectedConditions.urlContains(partailPageURL));
+	}
+
+	/**
+	 * 
+	 * @param driver
+	 * @param screenshotName
+	 * @return
+	 * @throws Throwable
+	 */
+	public String getScreenShot(WebDriver driver, String screenshotName) throws Throwable {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		LocalDateTime dt = LocalDateTime.now();
+		String dateTime = dt.toString().replace(" ", "_").replace(":", "_");
+		File dest = new File("./ScreenShot/" + screenshotName + "_" + dateTime + ".png");
+		FileUtils.copyFile(src, dest);
+		return screenshotName;
 	}
 
 	public void waitUntilTheTitle(WebDriver driver, String title) throws Throwable {

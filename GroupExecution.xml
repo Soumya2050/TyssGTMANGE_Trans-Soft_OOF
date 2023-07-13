@@ -3,8 +3,8 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="smokeTest"></include>
-			<include name="regTest"></include>
+			<include name="smokeTest"/>
+			<include name="regTest"/>
 		</run>
 	</groups>
 	<listeners>

@@ -9,6 +9,7 @@
           <include name="test1"/>
           <include name="logoutFromApplication"/>
           <include name="loginToApplication"/>
+          <include name="addToMenu"/>
           <include name="closeTheBrowser"/>
           <include name="lunchTheBrowser"/>
           <include name="closeDataBase"/>
