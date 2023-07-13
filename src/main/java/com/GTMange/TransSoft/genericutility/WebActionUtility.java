@@ -84,9 +84,11 @@ public class WebActionUtility {
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		LocalDateTime dt = LocalDateTime.now();
 		String dateTime = dt.toString().replace(" ", "_").replace(":", "_");
-		File dest = new File("./ScreenShot/" + screenshotName + "_" + dateTime + ".png");
+		String path = "./ScreenShot/" + screenshotName + "_" + dateTime + ".png";
+		File dest = new File(path);
 		FileUtils.copyFile(src, dest);
-		return screenshotName;
+		return path;
+		
 	}
 
 	public void waitUntilTheTitle(WebDriver driver, String title) throws Throwable {

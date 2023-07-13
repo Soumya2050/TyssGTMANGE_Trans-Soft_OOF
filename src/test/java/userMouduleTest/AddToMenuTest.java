@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -75,6 +76,7 @@ public class AddToMenuTest extends BaseClass {
 		/**
 		 * This method is used to click the save button
 		 */
+//		Assert.fail();
 		menu.saveButton();
 		/**
 		 * This method is used to display the confirmation message

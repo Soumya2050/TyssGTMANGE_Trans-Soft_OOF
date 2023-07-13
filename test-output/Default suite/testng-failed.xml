@@ -6,7 +6,6 @@
       <class name="userMouduleTest.AddToMenuTest">
         <methods>
           <include name="connectToDataBase"/>
-          <include name="test1"/>
           <include name="logoutFromApplication"/>
           <include name="loginToApplication"/>
           <include name="addToMenu"/>

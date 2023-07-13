@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results retried="3" ignored="3" total="8" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[addToMenu-----> Test Execution Started]]>
@@ -8,140 +8,72 @@
       <![CDATA[Test Execution is Skipped]]>
     </line>
     <line>
-      <![CDATA[test1-----> Test Execution Started]]>
+      <![CDATA[addToMenu-----> Test Execution Started]]>
     </line>
     <line>
       <![CDATA[Test Execution is Skipped]]>
     </line>
+    <line>
+      <![CDATA[addToMenu-----> Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Execution is Skipped]]>
+    </line>
+    <line>
+      <![CDATA[addToMenu-----> Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Execution is failed ]]>
+    </line>
+    <line>
+      <![CDATA[test1-----> Test Execution Started]]>
+    </line>
+    <line>
+      <![CDATA[test1------->Test Execution is SuccessFully ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-13T16:11:59 IST" name="Default suite" finished-at="2023-07-13T16:12:11 IST" duration-ms="11279">
+  <suite started-at="2023-07-13T16:35:57 IST" name="Default suite" finished-at="2023-07-13T16:36:27 IST" duration-ms="29110">
     <groups>
       <group name="regTest">
         <method signature="AddToMenuTest.addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" name="addToMenu" class="userMouduleTest.AddToMenuTest"/>
       </group> <!-- regTest -->
     </groups>
-    <test started-at="2023-07-13T16:11:59 IST" name="Default test" finished-at="2023-07-13T16:12:11 IST" duration-ms="11279">
+    <test started-at="2023-07-13T16:35:57 IST" name="Default test" finished-at="2023-07-13T16:36:27 IST" duration-ms="29110">
       <class name="userMouduleTest.AddToMenuTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:11:58 IST" name="connectToDataBase" finished-at="2023-07-13T16:11:59 IST" duration-ms="1163" status="PASS">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:35:57 IST" name="connectToDataBase" finished-at="2023-07-13T16:35:57 IST" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:00 IST" name="lunchTheBrowser" finished-at="2023-07-13T16:12:11 IST" duration-ms="10934" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.GTMange.TransSoft.genericutility.BaseClass.lunchTheBrowser(BaseClass.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:35:58 IST" name="lunchTheBrowser" finished-at="2023-07-13T16:36:04 IST" duration-ms="6762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="loginToApplication" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:04 IST" name="loginToApplication" finished-at="2023-07-13T16:36:05 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="addToMenu" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:05 IST" name="addToMenu" finished-at="2023-07-13T16:36:11 IST" duration-ms="5974" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.GTMange.TransSoft.genericutility.BaseClass.lunchTheBrowser(BaseClass.java:77)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -160,65 +92,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Test Execution is Skipped]]>
+              <![CDATA[addToMenu-----> Test Execution Started]]>
             </line>
             <line>
-              <![CDATA[test1-----> Test Execution Started]]>
+              <![CDATA[Test Execution is Skipped]]>
             </line>
           </reporter-output>
         </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="logoutFromApplication" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:11 IST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method signature="test1()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="test1" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="loginToApplication" finished-at="2023-07-13T16:36:11 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="addToMenu" finished-at="2023-07-13T16:36:16 IST" duration-ms="4799" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56d11df4cdd323f32e6f4989edfebbcd, get {url=http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\srjen\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53285/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56d11df4cdd323f32e6f4989edfebbcd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.GTMange.TransSoft.genericutility.BaseClass.lunchTheBrowser(BaseClass.java:77)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -237,26 +150,159 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[addToMenu-----> Test Execution Started]]>
+            </line>
             <line>
               <![CDATA[Test Execution is Skipped]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="loginToApplication" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="logoutFromApplication" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- addToMenu -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:16 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:16 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="closeTheBrowser" finished-at="2023-07-13T16:12:11 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:16 IST" name="loginToApplication" finished-at="2023-07-13T16:36:17 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:17 IST" name="addToMenu" finished-at="2023-07-13T16:36:20 IST" duration-ms="3337" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[addToMenu-----> Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Execution is Skipped]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addToMenu -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:20 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:20 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:20 IST" name="loginToApplication" finished-at="2023-07-13T16:36:21 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:21 IST" name="addToMenu" finished-at="2023-07-13T16:36:24 IST" duration-ms="3344" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[addToMenu-----> Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Execution is failed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addToMenu -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:24 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:24 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:24 IST" name="loginToApplication" finished-at="2023-07-13T16:36:25 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method signature="test1()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:25 IST" name="test1" finished-at="2023-07-13T16:36:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[test1-----> Test Execution Started]]>
+            </line>
+            <line>
+              <![CDATA[test1------->Test Execution is SuccessFully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:25 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:26 IST" duration-ms="1646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:26 IST" name="closeTheBrowser" finished-at="2023-07-13T16:36:27 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:12:11 IST" name="closeDataBase" finished-at="2023-07-13T16:12:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:27 IST" name="closeDataBase" finished-at="2023-07-13T16:36:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDataBase -->
