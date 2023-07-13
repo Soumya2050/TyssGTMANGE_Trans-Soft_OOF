@@ -91,6 +91,7 @@ public class ListenerImplementClass implements ITestListener {
 		report.setSystemInfo("base_browser", "chrome");
 		report.setSystemInfo("OS", "Windows11");
 		report.setSystemInfo("Reporter_name", "Soumya");
+		report.setSystemInfo("Reviewed by","MR. BAPU");
 	}
 
 	@Override
