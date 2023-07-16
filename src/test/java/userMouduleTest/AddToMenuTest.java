@@ -57,6 +57,7 @@ public class AddToMenuTest extends BaseClass {
 		/**
 		 * Verify addMenu page
 		 */
+		Assert.fail();
 		String addMenuHd = menu.getAddMenuHader().getText();
 		SoftAssert soft = new SoftAssert();
 		soft.assertTrue(addMenuHd.contains("Add Menu"), addMenuHd+"Header is not verifyed successfully");

@@ -32,27 +32,27 @@
       <![CDATA[test1------->Test Execution is SuccessFully ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-13T16:35:57 IST" name="Default suite" finished-at="2023-07-13T16:36:27 IST" duration-ms="29110">
+  <suite started-at="2023-07-13T17:35:27 IST" name="Default suite" finished-at="2023-07-13T17:35:51 IST" duration-ms="24330">
     <groups>
       <group name="regTest">
         <method signature="AddToMenuTest.addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" name="addToMenu" class="userMouduleTest.AddToMenuTest"/>
       </group> <!-- regTest -->
     </groups>
-    <test started-at="2023-07-13T16:35:57 IST" name="Default test" finished-at="2023-07-13T16:36:27 IST" duration-ms="29110">
+    <test started-at="2023-07-13T17:35:27 IST" name="Default test" finished-at="2023-07-13T17:35:51 IST" duration-ms="24330">
       <class name="userMouduleTest.AddToMenuTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:35:57 IST" name="connectToDataBase" finished-at="2023-07-13T16:35:57 IST" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:26 IST" name="connectToDataBase" finished-at="2023-07-13T17:35:27 IST" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:35:58 IST" name="lunchTheBrowser" finished-at="2023-07-13T16:36:04 IST" duration-ms="6762" status="PASS">
+        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:27 IST" name="lunchTheBrowser" finished-at="2023-07-13T17:35:34 IST" duration-ms="6854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:04 IST" name="loginToApplication" finished-at="2023-07-13T16:36:05 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:34 IST" name="loginToApplication" finished-at="2023-07-13T17:35:34 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:05 IST" name="addToMenu" finished-at="2023-07-13T16:36:11 IST" duration-ms="5974" status="SKIP">
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:34 IST" name="addToMenu" finished-at="2023-07-13T17:35:38 IST" duration-ms="3839" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -61,7 +61,7 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,15 +102,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:11 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:38 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:38 IST" duration-ms="625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="loginToApplication" finished-at="2023-07-13T16:36:11 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:38 IST" name="loginToApplication" finished-at="2023-07-13T17:35:39 IST" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:11 IST" name="addToMenu" finished-at="2023-07-13T16:36:16 IST" duration-ms="4799" status="SKIP">
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:39 IST" name="addToMenu" finished-at="2023-07-13T17:35:42 IST" duration-ms="3012" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -119,7 +119,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,15 +160,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:16 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:16 IST" duration-ms="226" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:42 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:42 IST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:16 IST" name="loginToApplication" finished-at="2023-07-13T16:36:17 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:42 IST" name="loginToApplication" finished-at="2023-07-13T17:35:43 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:17 IST" name="addToMenu" finished-at="2023-07-13T16:36:20 IST" duration-ms="3337" status="SKIP">
+        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:43 IST" name="addToMenu" finished-at="2023-07-13T17:35:45 IST" duration-ms="2054" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -177,7 +177,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,15 +218,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:20 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:20 IST" duration-ms="539" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:45 IST" duration-ms="696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:20 IST" name="loginToApplication" finished-at="2023-07-13T16:36:21 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="loginToApplication" finished-at="2023-07-13T17:35:45 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:21 IST" name="addToMenu" finished-at="2023-07-13T16:36:24 IST" duration-ms="3344" status="FAIL">
+        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="addToMenu" finished-at="2023-07-13T17:35:48 IST" duration-ms="2420" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -235,7 +235,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:107)
+at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -276,15 +276,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:24 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:24 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:48 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:49 IST" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:24 IST" name="loginToApplication" finished-at="2023-07-13T16:36:25 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="loginToApplication" finished-at="2023-07-13T17:35:49 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="test1()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:25 IST" name="test1" finished-at="2023-07-13T16:36:25 IST" duration-ms="3" status="PASS">
+        <test-method signature="test1()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="test1" finished-at="2023-07-13T17:35:49 IST" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[test1-----> Test Execution Started]]>
@@ -294,15 +294,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:25 IST" name="logoutFromApplication" finished-at="2023-07-13T16:36:26 IST" duration-ms="1646" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:51 IST" duration-ms="1762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:26 IST" name="closeTheBrowser" finished-at="2023-07-13T16:36:27 IST" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:51 IST" name="closeTheBrowser" finished-at="2023-07-13T17:35:51 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T16:36:27 IST" name="closeDataBase" finished-at="2023-07-13T16:36:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:51 IST" name="closeDataBase" finished-at="2023-07-13T17:35:51 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDataBase -->

@@ -3,6 +3,7 @@ package com.GTMange.TransSoft.genericutility;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -81,7 +82,9 @@ public class ListenerImplementClass implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		ExtentSparkReporter htmirepo = new ExtentSparkReporter("./ExtentReport/report.html");
+		Random r= new Random();
+		int num=r.nextInt(1000);
+		ExtentSparkReporter htmirepo = new ExtentSparkReporter("./ExtentReport/report.html"+num);
 		htmirepo.config().setDocumentTitle("ofo --> report");
 		htmirepo.config().setTheme(Theme.DARK);
 		htmirepo.config().setReportName("TYSS_project");
