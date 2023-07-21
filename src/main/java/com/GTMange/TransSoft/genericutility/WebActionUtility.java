@@ -157,12 +157,9 @@ public class WebActionUtility {
 	 * @param partialWindowTitle
 	 */
 	public void swithToWindow(WebDriver driver, String partialWindowTitle) {
-		Set<String> set = driver.getWindowHandles();
-		Iterator<String> it = set.iterator();
-
-		while (it.hasNext()) {
-			String wID = it.next();
-			driver.switchTo().window(wID);
+		Set<String> alliD = driver.getWindowHandles();
+		for (String id : alliD) {
+			driver.switchTo().window(id);
 			String currentWindowTitle = driver.getTitle();
 			if (currentWindowTitle.contains(partialWindowTitle)) {
 				System.out.println(partialWindowTitle + "Switch to Window is passed--!");
@@ -178,14 +175,12 @@ public class WebActionUtility {
 	 * @param partialWindowTitle
 	 */
 	public void swithToWindowBasedOnURL(WebDriver driver, String partialWindowURL) {
-		Set<String> set = driver.getWindowHandles();
-		Iterator<String> it = set.iterator();
+		Set<String> allids = driver.getWindowHandles();
 
-		while (it.hasNext()) {
-			String wID = it.next();
-			driver.switchTo().window(wID);
-			String currentWindowTitle = driver.getCurrentUrl();
-			if (currentWindowTitle.contains(partialWindowURL)) {
+		for (String id : allids) {		 
+			driver.switchTo().window(id);
+			String currentWindowurl = driver.getCurrentUrl();
+			if (currentWindowurl.contains(partialWindowURL)) {
 				System.out.println(partialWindowURL + "Switch to Window is passed--!");
 				break;
 			}

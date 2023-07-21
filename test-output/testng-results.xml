@@ -1,67 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="8" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[addToMenu-----> Test Execution Started]]>
-    </line>
-    <line>
-      <![CDATA[Test Execution is Skipped]]>
-    </line>
-    <line>
-      <![CDATA[addToMenu-----> Test Execution Started]]>
-    </line>
-    <line>
-      <![CDATA[Test Execution is Skipped]]>
-    </line>
-    <line>
-      <![CDATA[addToMenu-----> Test Execution Started]]>
-    </line>
-    <line>
-      <![CDATA[Test Execution is Skipped]]>
-    </line>
-    <line>
-      <![CDATA[addToMenu-----> Test Execution Started]]>
-    </line>
-    <line>
-      <![CDATA[Test Execution is failed ]]>
-    </line>
-    <line>
-      <![CDATA[test1-----> Test Execution Started]]>
-    </line>
-    <line>
-      <![CDATA[test1------->Test Execution is SuccessFully ]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-07-13T17:35:27 IST" name="Default suite" finished-at="2023-07-13T17:35:51 IST" duration-ms="24330">
+  <suite started-at="2023-07-21T23:23:58 IST" name="Default suite" finished-at="2023-07-21T23:24:02 IST" duration-ms="4738">
     <groups>
-      <group name="regTest">
-        <method signature="AddToMenuTest.addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" name="addToMenu" class="userMouduleTest.AddToMenuTest"/>
-      </group> <!-- regTest -->
     </groups>
-    <test started-at="2023-07-13T17:35:27 IST" name="Default test" finished-at="2023-07-13T17:35:51 IST" duration-ms="24330">
-      <class name="userMouduleTest.AddToMenuTest">
-        <test-method is-config="true" signature="connectToDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:26 IST" name="connectToDataBase" finished-at="2023-07-13T17:35:27 IST" duration-ms="581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDataBase -->
-        <test-method is-config="true" signature="lunchTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:27 IST" name="lunchTheBrowser" finished-at="2023-07-13T17:35:34 IST" duration-ms="6854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lunchTheBrowser -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:34 IST" name="loginToApplication" finished-at="2023-07-13T17:35:34 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:34 IST" name="addToMenu" finished-at="2023-07-13T17:35:38 IST" duration-ms="3839" status="SKIP">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2023-07-21T23:23:58 IST" name="Default test" finished-at="2023-07-21T23:24:02 IST" duration-ms="4738">
+      <class name="apractice.Test3">
+        <test-method signature="test1()[pri:0, instance:apractice.Test3@28261e8e]" started-at="2023-07-21T23:23:58 IST" name="test1" finished-at="2023-07-21T23:24:02 IST" duration-ms="4692" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.createRow(int)" because "sh" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.createRow(int)" because "sh" is null
+at apractice.Test3.test1(Test3.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,221 +45,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
-            <line>
-              <![CDATA[addToMenu-----> Test Execution Started]]>
-            </line>
-            <line>
-              <![CDATA[Test Execution is Skipped]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:38 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:38 IST" duration-ms="625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:38 IST" name="loginToApplication" finished-at="2023-07-13T17:35:39 IST" duration-ms="225" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:39 IST" name="addToMenu" finished-at="2023-07-13T17:35:42 IST" duration-ms="3012" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[addToMenu-----> Test Execution Started]]>
-            </line>
-            <line>
-              <![CDATA[Test Execution is Skipped]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:42 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:42 IST" duration-ms="621" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:42 IST" name="loginToApplication" finished-at="2023-07-13T17:35:43 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method retried="true" signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:43 IST" name="addToMenu" finished-at="2023-07-13T17:35:45 IST" duration-ms="2054" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[addToMenu-----> Test Execution Started]]>
-            </line>
-            <line>
-              <![CDATA[Test Execution is Skipped]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:45 IST" duration-ms="696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="loginToApplication" finished-at="2023-07-13T17:35:45 IST" duration-ms="214" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method signature="addToMenu()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:45 IST" name="addToMenu" finished-at="2023-07-13T17:35:48 IST" duration-ms="2420" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at userMouduleTest.AddToMenuTest.addToMenu(AddToMenuTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[addToMenu-----> Test Execution Started]]>
-            </line>
-            <line>
-              <![CDATA[Test Execution is failed ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addToMenu -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:48 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:49 IST" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="loginToApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="loginToApplication" finished-at="2023-07-13T17:35:49 IST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method signature="test1()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="test1" finished-at="2023-07-13T17:35:49 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[test1-----> Test Execution Started]]>
-            </line>
-            <line>
-              <![CDATA[test1------->Test Execution is SuccessFully ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:49 IST" name="logoutFromApplication" finished-at="2023-07-13T17:35:51 IST" duration-ms="1762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:51 IST" name="closeTheBrowser" finished-at="2023-07-13T17:35:51 IST" duration-ms="262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-        <test-method is-config="true" signature="closeDataBase()[pri:0, instance:userMouduleTest.AddToMenuTest@5a5a729f]" started-at="2023-07-13T17:35:51 IST" name="closeDataBase" finished-at="2023-07-13T17:35:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDataBase -->
-      </class> <!-- userMouduleTest.AddToMenuTest -->
+      </class> <!-- apractice.Test3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
