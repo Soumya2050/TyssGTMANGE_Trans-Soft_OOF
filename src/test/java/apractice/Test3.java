@@ -15,14 +15,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class Test3 {
 	
 	@Test
 	public void test1() throws EncryptedDocumentException, IOException   {
-		
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions op =new ChromeOptions();
+		op.addArguments("--headless");
+		WebDriver driver = new ChromeDriver(op);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.in/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

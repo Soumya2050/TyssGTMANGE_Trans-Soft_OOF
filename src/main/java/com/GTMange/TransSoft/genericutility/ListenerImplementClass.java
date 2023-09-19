@@ -49,17 +49,6 @@ public class ListenerImplementClass implements ITestListener {
 		}
 		test.log(Status.FAIL, result.getThrowable());
 		Reporter.log("Test Execution is failed ");
-//		String methodName = result.getMethod().getMethodName();
-//		TakesScreenshot takesScreenshot = (TakesScreenshot)BaseClass.sdriver;
-//		File src = takesScreenshot.getScreenshotAs(OutputType.FILE);
-//		LocalDateTime dt = LocalDateTime.now();
-//		String dateTime = dt.toString().replace(" ", "_").replace(":", "_");
-//		File dest = new File("./ScreenShot/"+methodName+"_"+dateTime+".png");
-//		try {
-//			FileUtils.copyFile(src, dest);
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
 	}
 
 	@Override
@@ -84,8 +73,8 @@ public class ListenerImplementClass implements ITestListener {
 	public void onStart(ITestContext context) {
 		Random r= new Random();
 		int num=r.nextInt(1000);
-		ExtentSparkReporter htmirepo = new ExtentSparkReporter("./ExtentReport/report.html"+num);
-		htmirepo.config().setDocumentTitle("ofo --> report");
+		ExtentSparkReporter htmirepo = new ExtentSparkReporter("./ExtentReport/report"+num);
+		htmirepo.config().setDocumentTitle("TestExecution --> report");
 		htmirepo.config().setTheme(Theme.DARK);
 		htmirepo.config().setReportName("TYSS_project");
 
@@ -94,7 +83,7 @@ public class ListenerImplementClass implements ITestListener {
 		report.setSystemInfo("base_browser", "chrome");
 		report.setSystemInfo("OS", "Windows11");
 		report.setSystemInfo("Reporter_name", "Soumya");
-		report.setSystemInfo("Reviewed by","MR. BAPU");
+		report.setSystemInfo("Reviewed by","abc@abc");
 	}
 
 	@Override
