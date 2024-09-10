@@ -18,9 +18,9 @@ public class ExcelDataProviderTest {
 	@DataProvider
 	public Object[][] readData() throws Throwable{
 		
-		FileInputStream fis = new FileInputStream("./src/test/resources/testScriptdata.xlsx");
+		FileInputStream fis = new FileInputStream("C:\\Users\\srjen\\OneDrive\\Desktop\\Contract Requests - Status Transition Report_20240418.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sh =wb.getSheet("data");
+		Sheet sh =wb.getSheet("Data");
 		int lastRowNum = sh.getLastRowNum()+1;
 		int lastCellNum = sh.getRow(0).getLastCellNum();
 		
