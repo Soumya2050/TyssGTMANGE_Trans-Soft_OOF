@@ -10,25 +10,24 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.GTMange.TransSoft.genericutility.BaseClass;
 
+public class Test1 extends BaseClass {
 
+	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 
-public class Test1  extends BaseClass{
-	
-		public static void main(String[] args) throws EncryptedDocumentException, IOException {
-			
-			FileInputStream fis = new FileInputStream("C:\\Users\\srjen\\OneDrive\\Desktop\\New Microsoft Excel Worksheet.xlsx");
-			
-			Workbook wb = WorkbookFactory.create(fis);
-			
-			DataFormatter format=new DataFormatter();
-			
-			String value=format.formatCellValue(wb.getSheet("Sheet1").getRow(1).getCell(1));
-			
+		FileInputStream fis = new FileInputStream(
+				"C:\\Users\\srjen\\OneDrive\\Desktop\\New Microsoft Excel Worksheet.xlsx");
+
+		Workbook wb = WorkbookFactory.create(fis);
+
+		DataFormatter format = new DataFormatter();
+
+		String value = format.formatCellValue(wb.getSheet("Sheet1").getRow(1).getCell(1));
+
 //			 = wb.getSheet("Sheet1").getRow(1).getCell(1).getStringCellValue();
-			
-			System.out.println(value);
-			
-			wb.close();
-		}
+
+		System.out.println(value);
+
+		wb.close();
+	}
 
 }
