@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import com.GTMange.TransSoft.genericutility.WebActionUtility;
 
-public class uploadProfileToNaukri {
+public class uploadProfileToNaukriTest {
 
 	@Test
 	public void uploadCVonNaukri() throws Throwable {
