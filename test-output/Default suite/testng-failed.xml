@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apractice.test4">
+      <class name="javaPractice.Demo1">
         <methods>
-          <include name="handleMultipleWindow"/>
+          <include name="expandString"/>
         </methods>
-      </class> <!-- apractice.test4 -->
+      </class> <!-- javaPractice.Demo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
