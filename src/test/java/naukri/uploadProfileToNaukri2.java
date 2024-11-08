@@ -4,21 +4,18 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-import java.io.File;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
 import com.GTMange.TransSoft.genericutility.WebActionUtility;
 
-public class uploadProfileToNaukri {
+public class uploadProfileToNaukri2 {
 
-	@Test
-	public void uploadCVonNaukri() throws Throwable {
+	public static void main(String[] args) throws Throwable {
 		WebActionUtility wLib = new WebActionUtility();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -32,18 +29,33 @@ public class uploadProfileToNaukri {
 		Thread.sleep(3000);
 		WebElement proofile = driver.findElement(By.xpath("//div[@class='view-profile-wrapper']"));
 		wLib.waitForElement(driver, proofile).click();
-
-		WebElement update = driver.findElement(By.xpath("//a[.='Update']"));
+		
+		WebElement update=driver.findElement(By.xpath("//a[.='Update']"));
 		wLib.waitForElement(driver, update).click();
-		File file = new File("./src/test/resources/Soumyaranjan.pdf");
-		driver.findElement(By.xpath("//input[@id='attachCV']"))
-				.sendKeys(file.getAbsolutePath());
+		
+		driver.findElement(By.xpath("//input[@id='attachCV']")).sendKeys("C:\\Users\\srjen\\OneDrive\\Desktop\\Soumyaranjan.pdf");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[@class='nI-gNb-drawer__icon-img-wrapper']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[@title='Logout']")).click();
 		Thread.sleep(3000);
+//		StringSelection str = new StringSelection("C:\\Users\\srjen\\OneDrive\\Desktop\\Soumyaranjan.pdf");
+//		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+//		Thread.sleep(3000);
+//		Robot r = new Robot();
+// 
+//		r.keyPress(KeyEvent.VK_CONTROL);
+//		r.keyPress(KeyEvent.VK_V);
+//
+//		r.keyRelease(KeyEvent.VK_CONTROL);
+//		r.keyRelease(KeyEvent.VK_V);
+//
+//		r.keyPress(KeyEvent.VK_ENTER);
+//		r.keyRelease(KeyEvent.VK_ENTER);
+//
+//		Thread.sleep(5000);
 		driver.quit();
+
 
 	}
 
