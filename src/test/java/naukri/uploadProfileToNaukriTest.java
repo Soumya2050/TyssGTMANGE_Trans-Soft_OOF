@@ -1,9 +1,5 @@
 package naukri;
 
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.time.Duration;
 
@@ -15,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.GTMange.TransSoft.genericutility.WebActionUtility;
 
-public class uploadProfileToNaukri {
+public class uploadProfileToNaukriTest {
 
 	@Test
 	public void uploadCVonNaukri() throws Throwable {
